@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetBetterAtSnooker.CustomPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Custom" HorizontalOptions="Center" Font="Bold" FontSize="Large"></Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+                <Grid>
+                    <Label Grid.Column="0" Text="Pots" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch> 
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Long" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Rest" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Position" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Safety" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Shot Time" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Table time" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="Snookered / escaped" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+                <Grid>
+                    <Label Grid.Column="0" Text="3-miss rule" FontSize="Small"></Label>
+                    <Switch Grid.Column="1" IsEnabled="True"></Switch>
+                </Grid>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="End">
+                <Button Text="OK" Command="{Binding SaveSettings}"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,9 +5,18 @@
              x:Class="GetBetterAtSnooker.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label HorizontalOptions="Center" Text="Snooker"  Font="Bold" FontSize="Medium"></Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+                <Button Text="Play" Clicked="Play"></Button>
+                <Button Text="Game Mode" Clicked="Game_Mode"></Button>
+                <Button Text="Game History" Clicked="Game_History"></Button>
+                <Button Text="My Account" Clicked="My_Account"></Button>
+                <Button Text="Settings" Clicked="Settings"></Button>
+                <Button Text="Friends" Clicked="Friends"></Button>
+                <Button Text="Instructions" Clicked="Instructions"></Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

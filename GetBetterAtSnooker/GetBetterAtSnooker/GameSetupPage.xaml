@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetBetterAtSnooker.GameSetupPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="{Binding SelectedGameMode, Mode=TwoWay}" HorizontalOptions="Center" Font="Bold" FontSize="Medium"></Label>
+                <Label Text="{Binding Level, Mode=TwoWay}" HorizontalOptions="Center" Font="Bold" FontSize="Medium"></Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+                <Button Text="New Match" Command="{Binding NewMatch}"></Button>
+                <Button Text="Continue" Command="{Binding Continue}"></Button>
+                <Button Text="Tournament" Command="{Binding Tournament}"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
